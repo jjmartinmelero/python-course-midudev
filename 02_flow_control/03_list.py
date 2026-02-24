@@ -40,3 +40,32 @@ print(list1[3:])
 
 # copy of list
 print(list1[:])
+
+
+# copy list with a new iteration
+print(list1[::2])
+
+
+# reverse list
+print(list1[::-1])
+
+
+# update a element in a list
+list1[0] = 20
+print(list1)
+
+# in python we can't update a position that does not exist
+# list1[20] = 200 --> ERROR
+
+
+# less efficient
+list1 = list1 + [10, 20, 30]
+print(list1)
+
+# more efficient
+list1 += [40, 50, 60]
+
+print(list1)
+
+# get length of list
+print("length of list: ", len(list1))
