@@ -24,3 +24,19 @@ print(list2[-2])  # test3
 
 # access element with matrix
 print(list_of_lists[1][0])
+
+
+# slicing
+list1 = [1, 2, 3, 4, 5]
+
+print(list1[1:4])
+
+# 3 first
+print(list1[:3])
+
+# 3 last
+print(list1[3:])
+
+
+# copy of list
+print(list1[:])
