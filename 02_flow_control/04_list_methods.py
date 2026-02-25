@@ -48,8 +48,31 @@ character_list.clear()
 print(character_list)
 
 
-character_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+numbers = [10, 5, 3, 4, 5, 3, 2, 8, 9]
 # delete a range of elements
-del character_list[2:5]
+del numbers[2:5]
 
-print(character_list)
+print(numbers)
+
+
+# order list
+numbers.sort()
+print(numbers)
+
+# create a new list
+numbers = [10, 5, 3, 4, 5, 3, 2, 8, 9]
+sorted_numbers = sorted(numbers)
+print(numbers, sorted_numbers, sep='\n')
+
+
+# order string list -- all minus
+fruits = ['apple', 'banana', 'lemon', 'cherry']
+sorted_fruits = sorted(fruits)
+print(sorted_fruits)
+
+# with some mayus and minus
+fruits = ['apple', 'Banana', 'lemon', 'Cherry']
+sorted_fruits = sorted(fruits)
+print(sorted_fruits)
+fruits.sort(key=str.lower)
+print(fruits)
