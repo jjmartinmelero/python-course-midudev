@@ -76,3 +76,13 @@ sorted_fruits = sorted(fruits)
 print(sorted_fruits)
 fruits.sort(key=str.lower)
 print(fruits)
+
+
+# more utils methods
+animals = ['animal1', 'animal2', 'animal3', 'animal4', 'animal5']
+print(len(animals))
+print(animals.count('animal2'))
+
+# check an element:
+print('animal8' in animals)
+print('animal2' in animals)
