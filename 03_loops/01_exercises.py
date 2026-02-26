@@ -34,7 +34,14 @@ else:
 print("\nEjercicio 3:")
 
 
-num_factorial =
+num_factorial = 5
+total = 1
+
+while num_factorial > 0:
+    total *= num_factorial
+    num_factorial -= 1
+else:
+    print(f"The factorial is: {total}")
 
 
 # Ejercicio 4: Validación de contraseña
@@ -44,12 +51,28 @@ num_factorial =
 # Si la contraseña es válida, imprime "Contraseña válida".
 print("\nEjercicio 4:")
 
+invalid_password: bool = True
+
+while invalid_password:
+    user_password = input("Write your password: ")
+
+    if len(user_password) >= 8:
+        invalid_password = False
+else:
+    print('The password is valid')
+
 
 # Ejercicio 5: Tabla de multiplicar
 # Pide al usuario que introduzca un número.
 # Imprime la tabla de multiplicar de ese número (del 1 al 10) usando un bucle while.
 print("\nEjercicio 5:")
 
+user_number = int(input("Write a number: "))
+counter = 1
+
+while counter <= 10:
+    print(f"{user_number} * {counter}: ", (user_number * counter))
+    counter += 1
 
 # Ejercicio 6: Números primos hasta N
 # Pide al usuario que introduzca un número entero positivo N.
@@ -57,3 +80,19 @@ print("\nEjercicio 5:")
 # Un número es primo si es divisible por sólo uno de los números enteros entre 1 y él mismo, incluido.
 
 print("\nEjercicio 6:")
+
+n = int(input("Introduce un número entero positivo N: "))
+
+numero = 2
+while numero <= n:
+    es_primo = True
+    divisor = 2
+    while divisor * divisor <= numero:
+        if numero % divisor == 0:
+            es_primo = False
+            break
+        divisor += 1
+    if es_primo:
+        print(numero)
+
+    numero += 1
