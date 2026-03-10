@@ -49,3 +49,13 @@ for animal in animals:
         continue
 
     print(animal)
+
+# list comprehension
+animals_upper_case = [animal.upper() for animal in animals]
+
+print(animals_upper_case)
+
+
+# displays even numbers
+result = [num for num in [1, 2, 3, 4, 5, 6, 7] if num % 2 == 0]
+print(result)
