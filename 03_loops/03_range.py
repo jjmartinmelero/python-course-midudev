@@ -18,3 +18,9 @@ for num in range(-5, 0):
 
 for num in range(10, 0, -1):
     print(num)
+
+# create a list from a range
+
+range(10)
+list_from_range = list(range(10))
+print(list_from_range)
