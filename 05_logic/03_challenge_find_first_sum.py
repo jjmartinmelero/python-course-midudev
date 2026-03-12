@@ -7,3 +7,14 @@
 # find_first_sum(nums, goal) -> [2,3]
 
 
+
+nums = [4,5,6,2]
+goal = 8
+
+def find_first_sum(nums, goal):
+    for idx, num in enumerate(nums):
+        for second_num in range(len(nums) - 1):
+            if((nums[(second_num + 1)] + num) == goal):
+                return [idx, (second_num + 1)]
+
+print(find_first_sum(nums, goal))
