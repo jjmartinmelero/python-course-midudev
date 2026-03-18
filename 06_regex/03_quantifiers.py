@@ -35,3 +35,20 @@ if re.search(pattern, phone):
     print('Número de teléfono válido encontrado.')
 else:
     print('Número de teléfono no válido.')
+
+
+# {n} -> exactly n times
+
+text = "aaaaa"
+pattern = r"a{3}"
+matches = re.findall(pattern, text)
+
+print(matches)
+
+
+# {n, m} -> between n and m times (inclusive)
+
+text = "uuu uu  uuuu    uuuuuuu"
+pattern = r"u{3,5}"
+matches = re.findall(pattern, text)
+print(matches)
