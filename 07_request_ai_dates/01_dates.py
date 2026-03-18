@@ -27,3 +27,27 @@ print(f"tomorrow: {tomorrow}")
 
 one_hour_after = datetime.now() + timedelta(hours=1)
 print(f"one hour after: {one_hour_after}")
+
+
+# 5. get individual components from a date
+
+print(f"year: {now.year}")
+print(f"month: {now.month}")
+print(f"day: {now.day}")
+print(f"hour: {now.hour}")
+print(f"minute: {now.minute}")
+print(f"second: {now.second}")
+print(f"microsecond: {now.microsecond}")
+
+# 6. calculate the difference between two dates
+date1 = datetime(2026, 12, 25)
+date2 = datetime(2026, 12, 26)
+difference = date2 - date1
+print(f"difference: {difference}")
+
+
+# 7. set locale for date formatting
+import locale
+
+locale.setlocale(locale.LC_TIME, 'es_ES.UTF-8')
+print(f"format date: {now.strftime('%d/%m/%Y %H:%M:%S')}")
