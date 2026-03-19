@@ -45,5 +45,3 @@ input = {
 response = requests.put("https://jsonplaceholder.typicode.com/posts/1", input)
 print(response.json())
 print(response.status_code)
-
-# use open-ai api
