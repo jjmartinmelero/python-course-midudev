@@ -23,7 +23,7 @@ finally:
 response = requests.get("https://jsonplaceholder.typicode.com/posts")
 print(response.json())
 
-# 2. with dependency - POST
+# 3. with dependency - POST
 input = {
     "title": "foo",
     "body": "bar",
@@ -33,3 +33,17 @@ input = {
 response = requests.post("https://jsonplaceholder.typicode.com/posts", input)
 print(response.json())
 print(response.status_code)
+
+# 4. with dependency - PUT
+input = {
+    "title": "foo",
+    "body": "bar",
+    "userId": 5,
+    "id": 1
+}
+
+response = requests.put("https://jsonplaceholder.typicode.com/posts/1", input)
+print(response.json())
+print(response.status_code)
+
+# use open-ai api
